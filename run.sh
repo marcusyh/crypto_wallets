@@ -1,8 +1,10 @@
-code_dir=/home/marcusyh/self/crypto_wallets/src
-wallet_dir=/home/marcusyh/self/crypto_wallets/wallet
-qrcode_dir=/home/marcusyh/self/crypto_wallets/qrcode
-logs_dir=/home/marcusyh/self/crypto_wallets/logs
+prefix=/home/marcusyh/code/crypto_wallets
+code_dir=$prefix/src
+wallet_dir=$prefix/wallet
+qrcode_dir=$prefix/qrcode
+logs_dir=$prefix/logs
 
+mkdir -p $wallet_dir $qrcode_dir $logs_dir
 docker \
   run \
     -it \
