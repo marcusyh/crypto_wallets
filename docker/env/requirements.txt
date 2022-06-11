@@ -1,0 +1,11 @@
+pyserial
+click
+click-aliases
+tabulate
+hdwallet
+symbol-sdk-python
+stellar-sdk
+cardano-tools
+pywaves
+qrcode
+tqdm

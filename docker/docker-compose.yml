@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+    crypto_wallet:
+        build: .
+        image: wallet:latest
+        container_name: crypto_wallet
+        volumes:
+            - "/cache/app/mahou/collector:/app/code"
+            - "/cache/app/mahou/storage/crypto:/app/code/src/storage"
+            - "/cache/app/mahou/data:/app/data/cache"
+            - "/var/app/mahou/data:/app/data/disk"
+
